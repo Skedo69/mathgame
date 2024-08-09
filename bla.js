@@ -7,12 +7,14 @@ function Generate(){
     num = Math.floor(Math.random()*100+1)
     num2 = Math.floor(Math.random()*100+1)
     document.getElementById("header").textContent = `${num} X ${num2}`
+    console.log(num*num2)
+    document.getElementById("value2").value = ""
 }
 function Checker(){
     if(num*num2 == document.getElementById("value2").value){
         wins ++;
         Streak ++;
-        document.getElementById("header").textContent = `Yaay!, Streak:${Streak}`
+        document.getElementById("header").textContent = `3ash!, Streak:${Streak}`
         num = Math.floor(Math.random()*100+1)
         num2 = Math.floor(Math.random()*100+1)
         document.getElementById("strok").textContent = `Your Streak is: ${Streak}🔥`
@@ -20,7 +22,7 @@ function Checker(){
     }
     else{
         Streak = 0;
-        document.getElementById("header").textContent = `False 😢`
+        document.getElementById("header").textContent = `7mar 😢`
         document.getElementById("strok").textContent = `Your Streak is: ${Streak}`
     }
 }
