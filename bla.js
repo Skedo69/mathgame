@@ -22,7 +22,7 @@ function Checker(){
     }
     else{
         Streak = 0;
-        document.getElementById("header").textContent = `7mar 😢`
+        document.getElementById("header").textContent = `7mar 😢, the number was ${num*num2}`
         document.getElementById("strok").textContent = `Your Streak is: ${Streak}`
     }
 }
