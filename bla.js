@@ -8,7 +8,6 @@ function Generate(){
         num = Math.floor(Math.random()*100+1)
         num2 = Math.floor(Math.random()*100+1)
         document.getElementById("header").textContent = `${num} X ${num2}`
-        console.log(num*num2)
         document.getElementById("value2").value = ""
         run = true;
     }
